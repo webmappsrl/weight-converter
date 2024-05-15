@@ -1,6 +1,6 @@
 <?php
 
-namespace VendorName\Skeleton\Tests;
+namespace Webmapp\WeightConverter\Tests;
 
 use PHPUnit\Framework\TestCase;
 
