@@ -28,4 +28,3 @@ class WeightConverterClassTest extends TestCase
         ];
     }
 }
-?>

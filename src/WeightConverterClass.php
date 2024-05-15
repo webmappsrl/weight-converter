@@ -16,7 +16,7 @@ class WeightConverterClass
     public function toPounds()
     {
         $pounds = $this->kilograms * 2.20462;
+
         return round($pounds, 5); // Arrotondare a 5 cifre decimali per precisione
     }
 }
-?>
