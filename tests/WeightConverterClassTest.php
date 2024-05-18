@@ -54,6 +54,4 @@ class WeightConverterClassTest extends TestCase
             [100, 15.747],
         ];
     }
-
-
 }

@@ -13,16 +13,15 @@ class WeightConverterClass
     }
 
     // Metodo per convertire i chilogrammi in libbre
-    public function toPounds() : float
+    public function toPounds(): float
     {
         $pounds = $this->kilograms * 2.20462;
 
         return round($pounds, 5); // Arrotondare a 5 cifre decimali per precisione
     }
 
-    public function toStones() : float
+    public function toStones(): float
     {
         return $this->kilograms * 0.15747;
     }
 }
-
