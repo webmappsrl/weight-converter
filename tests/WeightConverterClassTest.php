@@ -27,4 +27,33 @@ class WeightConverterClassTest extends TestCase
             [100, 220.46200],
         ];
     }
+
+    /**
+     * @dataProvider kgToStonesProvider
+     */
+    public function testKgToStones($kg, $expectedStones)
+    {
+        $converter = new WeightConverterClass($kg);
+        $this->assertEquals($expectedStones, $converter->toStones(), '', 0.0001);
+    }
+
+    public static function kgToStonesProvider()
+    {
+        return [
+            [0, 0],
+            [1,  0.15747],
+            [10, 1.5747],
+            [20, 3.1494],
+            [30, 4.7241],
+            [40, 6.2988],
+            [50, 7.8735],
+            [60, 9.4482],
+            [70, 11.0229],
+            [80, 12.5976],
+            [90, 14.1723],
+            [100, 15.747],
+        ];
+    }
+
+
 }
